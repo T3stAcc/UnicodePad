@@ -443,7 +443,7 @@
 	<string name="emojicompat_true">全部</string>
 
 	<string name="download_desc">下载 Noto 字体…</string>
-	<string name="download_uri">https://www.google.cn/get/noto/</string>
+	<string name="download_uri">https://fonts.google.com/noto</string>
 	<string name="export_data">导出数据和设置…</string>
 	<string name="import_data">导入数据和设置…</string>
 	<string name="exported_data">要导出的数据</string>
