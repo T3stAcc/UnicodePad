@@ -99,6 +99,7 @@ class SettingActivity : BaseActivity() {
                     val intent = Intent(Intent.ACTION_CREATE_DOCUMENT)
                     intent.addCategory(Intent.CATEGORY_OPENABLE)
                     intent.type = "application/json"
+                    intent.putExtra(Intent.EXTRA_TITLE, "export.json")
                     startActivityForResult(intent, SETTING_EXPORT_CODE)
                     true
                 }
