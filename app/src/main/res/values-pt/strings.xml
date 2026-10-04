@@ -17,7 +17,6 @@
 	<string name="desc">Detalhes</string>
 	<string name="find">Encontrar</string>
 	<string name="fhint">Insira um nome de caractere</string>
-	<string name="inlist">Encontrar na lista</string>
 	<string name="copied">Copiado para a área de transferência</string>
 	<string name="finish">Concluído</string>
 	<string name="share">Compartilhar</string>
@@ -37,7 +36,6 @@
 	<string name="locale_title">Localização</string>
 	<string name="input">Inserir</string>
 	<string name="remrec">Remover</string>
-	<string name="add">Selecionar…</string>
 	<string name="mark">Marcar</string>
 	<string name="rem">Remover…</string>
 	<string name="code">Pontos de código</string>
@@ -406,7 +404,6 @@
 	<string name="data_favorite">Favorito (%1$d)</string>
 	<string name="data_scroll">Posições de rolagem</string>
 	<string name="data_merge">Mesclar com o atual</string>
-	<string name="no_ad_desc">Remover anúncios</string>
 	<string name="skip_guide_desc">Pular tutoriais</string>
 	<string name="tabs_desc">Configurações de abas…</string>
 	<string name="tabs_hint">Dica: Você pode alternar rapidamente entre única/várias colunas pinçando para dentro e para fora nas listas</string>
@@ -447,5 +444,5 @@
 	<string name="legal_uni2">Esse aplicativo inclui uma versão modificada do Unicode Data File.
 Copyright © 1991-2026 Unicode, Inc. All rights reserved.
 Distributed under the Terms of Use in
-http://www.unicode.org/copyright.html.</string>
+http://www.unicode.org/copyright.html</string>
 </resources>
