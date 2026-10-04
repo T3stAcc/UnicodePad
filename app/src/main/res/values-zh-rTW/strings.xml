@@ -17,7 +17,6 @@
 	<string name="desc">詳細</string>
 	<string name="find">尋找</string>
 	<string name="fhint">輸入字符名稱</string>
-	<string name="inlist">顯示在列表中的位置</string>
 	<string name="copied">複製到剪貼簿</string>
 	<string name="finish">確定</string>
 	<string name="share">分享</string>
@@ -30,7 +29,6 @@
 	<string name="normal">預設值</string>
 	<string name="input">輸入</string>
 	<string name="remrec">刪除</string>
-	<string name="add">選擇…</string>
 	<string name="mark">標記</string>
 	<string name="rem">刪除…</string>
 	<string name="code">碼位</string>
@@ -377,7 +375,6 @@
 
 	<string name="download_desc">下載 Noto 字型…</string>
 	<string name="download_uri">https://fonts.google.com/noto</string>
-	<string name="no_ad_desc">關閉廣告</string>
 	<string name="tabs_desc">標籤設定…</string>
 	<string name="shown_desc">已顯示標籤</string>
 	<string name="hidden_desc">已隱藏標籤</string>
@@ -413,7 +410,7 @@
 	<string name="legal_uni2">本應用程式包含Unicode Data File修改的內容
 Copyright © 1991-2026 Unicode, Inc. All rights reserved.
 Distributed under the Terms of Use in
-http://www.unicode.org/copyright.html.</string>
+http://www.unicode.org/copyright.html</string>
     <string name="locale_default">預設值 (%s)</string>
 	<string name="locale_other">其他…</string>
     <string name="locale_title">地區設定</string>
