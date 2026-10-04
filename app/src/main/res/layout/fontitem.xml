@@ -19,7 +19,6 @@
 	android:layout_height="wrap_content"
 	android:background="?android:attr/windowBackground"
 	android:orientation="horizontal"
-	android:minHeight="?android:attr/listPreferredItemHeight"
 	android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
 	android:paddingRight="?android:attr/listPreferredItemPaddingRight"
 	android:paddingStart="?android:attr/listPreferredItemPaddingStart"
