@@ -410,7 +410,7 @@
 	<string name="legal_uni2">本應用程式包含Unicode Data File修改的內容
 Copyright © 1991-2026 Unicode, Inc. All rights reserved.
 Distributed under the Terms of Use in
-http://www.unicode.org/copyright.html</string>
+https://www.unicode.org/copyright.html</string>
     <string name="locale_default">預設值 (%s)</string>
 	<string name="locale_other">其他…</string>
     <string name="locale_title">地區設定</string>
