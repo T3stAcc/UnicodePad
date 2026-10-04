@@ -23,7 +23,6 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
-import android.os.Build
 import android.os.Bundle
 import android.text.ClipboardManager
 import android.view.View
@@ -71,8 +70,6 @@ class SettingActivity : BaseActivity() {
     }
 
     class MyPreferenceFragment : PreferenceFragment(), Preference.OnPreferenceChangeListener {
-        private val adCompat: AdCompat = AdCompatImpl()
-
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             addPreferencesFromResource(R.xml.setting)
@@ -146,16 +143,6 @@ class SettingActivity : BaseActivity() {
             findPreference<Preference>("legal_noto")!!.also {
                 it.setOnPreferenceClickListener {
                     openPage("https://github.com/googlefonts/noto-emoji")
-                }
-            }
-            if (!adCompat.showAdSettings) {
-                findPreference<CheckBoxPreference>("no-ad")!!.also {
-                    if (Build.VERSION.SDK_INT >= 26) {
-                        it.parent?.removePreference(it)
-                    } else {
-                        it.isEnabled = false
-                        it.isChecked = true
-                    }
                 }
             }
             preferenceScreen.let {
@@ -272,7 +259,6 @@ class SettingActivity : BaseActivity() {
                                         it.put("universion", pref.getString("universion", null))
                                         it.put("emojicompat", pref.getString("emojicompat", null))
                                         it.put("theme", pref.getString("theme", null))
-                                        it.put("no-ad", if (pref.contains("no-ad")) pref.getBoolean("no-ad", false) else null)
                                         it.put("skip_guide", if (pref.contains("skip_guide")) pref.getBoolean("skip_guide", false) else null)
                                         it.put("cnt_shown", if (pref.contains("cnt_shown")) pref.getInt("cnt_shown", 0) else null)
                                         for (key in arrayOf("rec", "list", "emoji", "find", "fav", "edt")) {
@@ -399,7 +385,6 @@ class SettingActivity : BaseActivity() {
                                         (it.opt("universion") as? String)?.let { str -> edit.putString("universion", str) }
                                         (it.opt("emojicompat") as? String)?.let { str -> edit.putString("emojicompat", str) }
                                         (it.opt("theme") as? String)?.let { str -> edit.putString("theme", str) }
-                                        (it.opt("no-ad") as? Boolean)?.let { bool -> edit.putBoolean("no-ad", bool) }
                                         (it.opt("skip_guide") as? Boolean)?.let { bool -> edit.putBoolean("skip_guide", bool) }
                                         (it.opt("cnt_shown") as? Int)?.let { int -> edit.putInt("cnt_shown", int) }
                                         for (key in arrayOf("rec", "list", "emoji", "find", "fav", "edt")) {
