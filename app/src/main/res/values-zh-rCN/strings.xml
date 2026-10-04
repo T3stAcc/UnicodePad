@@ -17,7 +17,6 @@
 	<string name="desc">详情</string>
 	<string name="find">查找</string>
 	<string name="fhint">输入字符名称或汉字读音</string>
-	<string name="inlist">转到列表</string>
 	<string name="copied">已复制到剪贴板</string>
 	<string name="finish">完成</string>
 	<string name="share">分享</string>
@@ -40,7 +39,6 @@
 	<string name="locale_title">区域设置</string>
 	<string name="input">输入</string>
 	<string name="remrec">移除</string>
-	<string name="add">选择…</string>
 	<string name="mark">标记</string>
 	<string name="rem">移除…</string>
 	<string name="code">码位</string>
@@ -462,7 +460,6 @@
 	<string name="data_favorite">收藏 (%1$d)</string>
 	<string name="data_scroll">滚动位置</string>
 	<string name="data_merge">与现有记录合并</string>
-	<string name="no_ad_desc">不显示广告</string>
 	<string name="skip_guide_desc">跳过向导</string>
 	<string name="tabs_desc">标签设置…</string>
 	<string name="tabs_hint">提示：可以在列表上通过双指捏合及张开来快速切换单栏、多栏视图。</string>
@@ -505,5 +502,5 @@
 	<string name="legal_uni2">此应用包含经过修改的 Unicode 数据文件。
 Copyright © 1991-2026 Unicode, Inc. All rights reserved.
 Distributed under the Terms of Use in
-http://www.unicode.org/copyright.html.</string>
+http://www.unicode.org/copyright.html</string>
 </resources>
