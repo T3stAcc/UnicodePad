@@ -6,7 +6,6 @@
 	<string name="desc">Detaljer</string>
 	<string name="find">Sök</string>
 	<string name="fhint">Mata in namn på tecken</string>
-	<string name="inlist">Hitta i lista</string>
 	<string name="copied">Kopierad till urklipp</string>
 	<string name="finish">Enter</string>
 	<string name="share">Dela</string>
@@ -26,7 +25,6 @@
 	<string name="locale_title">Språk</string>
 	<string name="input">Mata in</string>
 	<string name="remrec">Ta bort</string>
-	<string name="add">Välj…</string>
 	<string name="mark">Markera</string>
 	<string name="rem">Ta bort…</string>
 	<string name="code">Kodpunkt</string>
@@ -409,7 +407,6 @@
 	<string name="data_favorite">Favoriter (%1$d)</string>
 	<string name="data_scroll">Skrollpositioner</string>
 	<string name="data_merge">Slå samman</string>
-	<string name="no_ad_desc">Visa inte annonser</string>
 	<string name="skip_guide_desc">Hoppa över handledning</string>
 	<string name="tabs_desc">Flikinställningar …</string>
 	<string name="shown_desc">Synliga flikar</string>
@@ -448,5 +445,5 @@
 	<string name="legal_uni2">Denna applikation innehåller en modifierad version av Unicode Data File.
 Copyright © 1991-2026 Unicode, Inc. All rights reserved.
 Distributed under the Terms of Use in
-http://www.unicode.org/copyright.html.</string>
+http://www.unicode.org/copyright.html</string>
 </resources>
