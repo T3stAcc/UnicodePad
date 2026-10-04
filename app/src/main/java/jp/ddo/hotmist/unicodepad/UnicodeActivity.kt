@@ -808,6 +808,8 @@ class UnicodeActivity : BaseActivity() {
         if (action == ACTION_INTERCEPT || (Build.VERSION.SDK_INT >= 23 && action == Intent.ACTION_PROCESS_TEXT)) {
             menu.add(3, MENU_ID_SHARE, MENU_ID_SHARE, R.string.share).setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_NEVER).setIcon(android.R.drawable.ic_menu_share)
             menu.add(3, MENU_ID_SEND, MENU_ID_SEND, R.string.finish).setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS).setIcon(android.R.drawable.ic_menu_send)
+        } else {
+            menu.add(3, MENU_ID_SHARE, MENU_ID_SHARE, R.string.share).setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS).setIcon(android.R.drawable.ic_menu_share)
         }
         updateUndoRedoMenu()
         return true
