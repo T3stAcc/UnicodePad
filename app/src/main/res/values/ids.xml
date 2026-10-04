@@ -21,7 +21,6 @@
 	<item name="ctab" type="id"/>
 	<item name="fontBar" type="id"/>
 	<item name="finish" type="id"/>
-	<item name="adContainer" type="id"/>
 	<item name="editText" type="id"/>
 	<item name="searchText" type="id"/>
 	<item name="font_rename" type="id"/>
