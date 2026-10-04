@@ -26,7 +26,6 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Process
-import android.provider.OpenableColumns
 import android.text.*
 import android.util.TypedValue
 import android.view.*
@@ -119,7 +118,6 @@ class UnicodeActivity : BaseActivity() {
     private lateinit var bottomSheetView: ViewGroup
     private lateinit var itemUndo: MenuItem
     private lateinit var itemRedo: MenuItem
-    private val adCompat: AdCompat = AdCompatImpl()
     private lateinit var cm: ClipboardManager
     private lateinit var pref: SharedPreferences
     private lateinit var sessionStore: SessionStore
@@ -559,18 +557,6 @@ class UnicodeActivity : BaseActivity() {
                                     }
                                 }, LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 0, 1f))
                             })
-                            if (adCompat.showAdSettings) {
-                                addView(LinearLayout(context).apply {
-                                    id = R.id.adContainer
-                                    orientation = LinearLayout.VERTICAL
-                                    gravity = Gravity.BOTTOM
-                                    ViewCompat.setOnApplyWindowInsetsListener(this) { v, windowInsets ->
-                                        val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.ime())
-                                        v.setPadding(0, 0, 0, insets.bottom)
-                                        WindowInsetsCompat.CONSUMED
-                                    }
-                                }, LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT))
-                            }
                             addView(LinearLayout(context).apply {
                                 orientation = LinearLayout.VERTICAL
                                 setBackgroundResource(R.drawable.bottom_sheet_background)
@@ -625,12 +611,6 @@ class UnicodeActivity : BaseActivity() {
                                 }
                             })
                         }},
-                        update = {
-                            if (adCompat.showAdSettings) {
-                                val height = adCompat.renderAdToContainer(this@UnicodeActivity, pref)
-                                adpPage.onAdHeightChanged((height * getSystem().displayMetrics.density).toInt())
-                            }
-                        },
                         modifier = Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.systemBars.only(WindowInsetsSides.Top)).padding(0.dp, editTextHeight, 0.dp, 0.dp),
                     )
                 }
@@ -828,8 +808,6 @@ class UnicodeActivity : BaseActivity() {
         if (action == ACTION_INTERCEPT || (Build.VERSION.SDK_INT >= 23 && action == Intent.ACTION_PROCESS_TEXT)) {
             menu.add(3, MENU_ID_SHARE, MENU_ID_SHARE, R.string.share).setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_NEVER).setIcon(android.R.drawable.ic_menu_share)
             menu.add(3, MENU_ID_SEND, MENU_ID_SEND, R.string.finish).setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS).setIcon(android.R.drawable.ic_menu_send)
-        } else {
-            menu.add(3, MENU_ID_SHARE, MENU_ID_SHARE, R.string.share).setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS).setIcon(android.R.drawable.ic_menu_share)
         }
         updateUndoRedoMenu()
         return true
@@ -1101,10 +1079,6 @@ class UnicodeActivity : BaseActivity() {
             chooser.load(pref)
         }
         scrollUi = newScrollUi
-        if (requestCode != -1) {
-            val height = adCompat.renderAdToContainer(this, pref)
-            adpPage.onAdHeightChanged((height * getSystem().displayMetrics.density).toInt())
-        }
     }
 
     fun setPage(page: Int) {
