@@ -137,7 +137,7 @@ class SettingActivity : BaseActivity() {
             }
             findPreference<Preference>("legal_uni")!!.also {
                 it.setOnPreferenceClickListener {
-                    openPage("https://unicode.org/")
+                    openPage("https://home.unicode.org")
                 }
             }
             findPreference<Preference>("legal_noto")!!.also {
