@@ -55,7 +55,6 @@
 
 	<string name="download_desc">გადმოწერე Noto ფონტები…</string>
 	<string name="download_uri">https://fonts.google.com/noto</string>
-	<string name="no_ad_desc">უარი თქვით რეკლამებზე</string>
 	<string name="tabs_desc">ჩანართის პარამეტრები…</string>
 	<string name="shown_desc">ნაჩვენები ჩანართები</string>
 	<string name="hidden_desc">დამალული ჩანართები</string>
