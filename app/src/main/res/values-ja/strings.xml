@@ -17,7 +17,6 @@
 	<string name="desc">詳細</string>
 	<string name="find">検索</string>
 	<string name="fhint">文字名称を入力</string>
-	<string name="inlist">リスト内表示</string>
 	<string name="copied">クリップボードにコピーしました</string>
 	<string name="finish">確定</string>
 	<string name="share">共有</string>
@@ -44,7 +43,6 @@
 	<string name="normal">デフォルト</string>
 	<string name="input">入力</string>
 	<string name="remrec">削除</string>
-	<string name="add">選択…</string>
 	<string name="mark">マーク</string>
 	<string name="rem">削除…</string>
 	<string name="code">コードポイント</string>
@@ -479,7 +477,6 @@
 
 	<string name="download_desc">Notoフォントをダウンロード…</string>
 	<string name="download_uri">https://fonts.google.com/noto</string>
-	<string name="no_ad_desc">広告を非表示</string>
 	<string name="skip_guide_desc">チュートリアルをスキップ</string>
 	<string name="tabs_desc">タブ設定…</string>
 	<string name="tabs_hint">ヒント: リスト上でピンチイン・アウトすると1列と複数列を素早く切り替えられます</string>
@@ -525,7 +522,7 @@
 	<string name="legal_uni2">本アプリケーションはUnicode Data Fileの改変された版を含んでいます。
 Copyright © 1991-2026 Unicode, Inc. All rights reserved.
 Distributed under the Terms of Use in
-http://www.unicode.org/copyright.html.</string>
+http://www.unicode.org/copyright.html</string>
     <string name="locale_default">デフォルト (%s)</string>
 	<string name="locale_other">その他…</string>
 	<string name="locale_title">ロケール</string>
