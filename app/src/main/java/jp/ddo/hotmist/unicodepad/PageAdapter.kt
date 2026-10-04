@@ -138,6 +138,7 @@ class PageAdapter(private val activity: UnicodeActivity, private val pref: Share
             }.let { view ->
                 view.layoutParams = ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT)
                 (if (view is DragListView) view.recyclerView else view).clipToPadding = false
+                (if (view is DragListView) view.recyclerView else view).updatePadding(0, 0, 0, top + insetHeight)
                 views[position] = view
                 view
             }
