@@ -17,7 +17,6 @@
 	<string name="desc">Detail</string>
 	<string name="find">Find</string>
 	<string name="fhint">Enter a character name or Unihan reading</string>
-	<string name="inlist">Find in list</string>
 	<string name="copied">Copied to clipboard</string>
 	<string name="finish">Enter</string>
 	<string name="share">Share</string>
@@ -47,7 +46,6 @@
 	<string name="locale_title">Locale</string>
 	<string name="input">Input</string>
 	<string name="remrec">Remove</string>
-	<string name="add">Select…</string>
 	<string name="mark">Mark</string>
 	<string name="rem">Remove…</string>
 	<string name="code">Codepoint</string>
@@ -524,7 +522,6 @@
 	<string name="data_favorite">Favorite (%1$d)</string>
 	<string name="data_scroll">Scroll positions</string>
 	<string name="data_merge">Merge with current</string>
-	<string name="no_ad_desc">Opt-out ads</string>
 	<string name="skip_guide_desc">Skip tutorials</string>
 	<string name="tabs_desc">Tabs settings…</string>
 	<string name="tabs_hint">Hint: You can quickly switch between single / multiple columns by pinching in and out on lists</string>
@@ -571,13 +568,13 @@
 	<string name="notacharacter" translatable="false">&lt;not a character&gt;</string>
 	<string name="malformed">Malformed file name in zip</string>
 	<string name="legal">Legal</string>
-	<string name="legal_uni" translatable="false">Unicode®</string>
+	<string name="legal_uni" translatable="false">Unicode ®</string>
 	<string name="legal_uni2">This application includes a modified version of Unicode Data File.
 Copyright © 1991-2026 Unicode, Inc. All rights reserved.
 Distributed under the Terms of Use in
-http://www.unicode.org/copyright.html.</string>
+http://www.unicode.org/copyright.html</string>
 	<string name="legal_app" translatable="false">UnicodePad 2.20.0</string>
-	<string name="legal_app2" translatable="false">UnicodePad is licensed under the Apache License, Version2.0
+	<string name="legal_app2" translatable="false">UnicodePad is licensed under the Apache License, Version 2.0
 https://github.com/Ryosuke839/UnicodePad</string>
 	<string name="legal_noto" translatable="false">Noto Color Emoji</string>
 	<string name="legal_noto2" translatable="false">Copyright 2013 Google LLC
