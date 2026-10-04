@@ -381,6 +381,17 @@ class UnicodeActivity : BaseActivity() {
                             ) {
                                 AndroidView(
                                     factory = { context -> Button(context, null, android.R.attr.buttonBarButtonStyle).apply {
+                                        text = resources.getText(android.R.string.copy)
+                                    } },
+                                    update = {
+                                        it.setOnClickListener {
+                                            copyText(showToast = Build.VERSION.SDK_INT <= 32)
+                                        }
+                                    },
+                                    modifier = Modifier.weight(1f),
+                                )
+                                AndroidView(
+                                    factory = { context -> Button(context, null, android.R.attr.buttonBarButtonStyle).apply {
                                         text = resources.getText(android.R.string.paste)
                                     } },
                                     update = {
@@ -410,17 +421,6 @@ class UnicodeActivity : BaseActivity() {
                                             }
                                             if (pos < 0) i--
                                             adpPage.showDesc(null, i, adpPage.adapterEdit)
-                                        }
-                                    },
-                                    modifier = Modifier.weight(1f),
-                                )
-                                AndroidView(
-                                    factory = { context -> Button(context, null, android.R.attr.buttonBarButtonStyle).apply {
-                                        text = resources.getText(android.R.string.copy)
-                                    } },
-                                    update = {
-                                        it.setOnClickListener {
-                                            copyText(showToast = Build.VERSION.SDK_INT <= 32)
                                         }
                                     },
                                     modifier = Modifier.weight(1f),
