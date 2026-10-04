@@ -17,7 +17,6 @@
 	<string name="desc">დეტალები</string>
 	<string name="find">ძიება</string>
 	<string name="fhint">შეიყვანეთ სიმბოლოს სახელი</string>
-	<string name="inlist">ძიება სიაში</string>
 	<string name="copied">დაკოპირებულია გაცვლის ბუფერზე</string>
 	<string name="finish">Enter</string>
 	<string name="share">გაზიარება</string>
@@ -30,7 +29,6 @@
 	<string name="normal">ჩვეულებრივი</string>
 	<string name="input">შეყვანა</string>
 	<string name="remrec">წაშლა</string>
-	<string name="add">დამატება…</string>
 	<string name="mark">მონიშვნა</string>
 	<string name="rem">წაშლა…</string>
 	<string name="code">კოდირებული წერტილი</string>
@@ -94,5 +92,5 @@
 	<string name="legal_uni2">ეს პროგრამა შეიცავს Unicode მონაცემთა ფაილის შეცვლილ ვერსიას.
 Copyright © 1991-2026 Unicode, Inc. All rights reserved.
 Distributed under the Terms of Use in
-http://www.unicode.org/copyright.html.</string>
+http://www.unicode.org/copyright.html</string>
 </resources>
