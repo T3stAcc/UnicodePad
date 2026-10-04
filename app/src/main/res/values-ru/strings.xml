@@ -17,7 +17,6 @@
 	<string name="desc">Подробно</string>
 	<string name="find">Поиск</string>
 	<string name="fhint">Введите название символа или значение Unihan</string>
-	<string name="inlist">Найти в списке</string>
 	<string name="copied">Скопировано в буфер обмена</string>
 	<string name="finish">Ввод</string>
 	<string name="share">Поделиться</string>
@@ -40,7 +39,6 @@
 	<string name="locale_title">Язык</string>
 	<string name="input">Ввод</string>
 	<string name="remrec">Удалить</string>
-	<string name="add">Выбор…</string>
 	<string name="mark">Метка</string>
 	<string name="rem">Удалить…</string>
 	<string name="code">Код</string>
@@ -478,7 +476,6 @@
 	<string name="data_favorite">Избранное (%1$d)</string>
 	<string name="data_scroll">Позиции прокрутки</string>
 	<string name="data_merge">Объединить с текущим</string>
-	<string name="no_ad_desc">Отказаться от рекламы</string>
 	<string name="skip_guide_desc">Не показывать руководство</string>
 	<string name="tabs_desc">Настройки вкладок…</string>
 	<string name="tabs_hint">Совет: вы можете быстро переключаться между одним или несколькими столбцами, сжимая и разжимая списки</string>
@@ -521,5 +518,5 @@
 	<string name="legal_uni2">Это приложение включает модифицированную версию файла данных Unicode.
 Copyright © 1991-2026 Unicode, Inc. All rights reserved.
 Distributed under the Terms of Use in
-http://www.unicode.org/copyright.html.</string>
+http://www.unicode.org/copyright.html</string>
 </resources>
