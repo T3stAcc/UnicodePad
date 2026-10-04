@@ -18,7 +18,6 @@ package jp.ddo.hotmist.unicodepad
 import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.content.SharedPreferences
-import android.content.res.Resources
 import android.graphics.Typeface
 import android.os.Build
 import android.view.*
@@ -264,7 +263,7 @@ class PageAdapter(private val activity: UnicodeActivity, private val pref: Share
                     adapterRecent.rem(adapter.id.toInt())
                     adapterRecent.notifyItemRemoved(adapter.index)
                 }
-            }, LinearLayout.LayoutParams(Resources.getSystem().displayMetrics.widthPixels / 4, ViewGroup.LayoutParams.WRAP_CONTENT))
+            }, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
             if (view is AbsListView && parentAdapter === adapterEdit) addView(Button(activity, null, android.R.attr.buttonBarButtonStyle).apply {
                 text = activity.getString(R.string.delete)
                 setOnClickListener {
@@ -272,7 +271,7 @@ class PageAdapter(private val activity: UnicodeActivity, private val pref: Share
                     val s = edit.editableText.toString()
                     edit.editableText.delete(s.offsetByCodePoints(0, i), s.offsetByCodePoints(0, i + 1))
                 }
-            }, LinearLayout.LayoutParams(Resources.getSystem().displayMetrics.widthPixels / 4, ViewGroup.LayoutParams.WRAP_CONTENT))
+            }, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
             if (view is RecyclerView && parentAdapter === adapterList) addView(Button(activity, null, android.R.attr.buttonBarButtonStyle).apply {
                 text = activity.getString(R.string.mark)
                 setOnClickListener {
@@ -283,7 +282,7 @@ class PageAdapter(private val activity: UnicodeActivity, private val pref: Share
                             .setPositiveButton(R.string.mark) { _, _ -> adapterList.mark(adapter.id.toInt(), edit.text.toString()) }
                             .create().show()
                 }
-            }, LinearLayout.LayoutParams(Resources.getSystem().displayMetrics.widthPixels / 4, ViewGroup.LayoutParams.WRAP_CONTENT))
+            }, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
             addView(View(activity), LinearLayout.LayoutParams(0, 1, 1f))
             addView(Button(activity, null, android.R.attr.buttonBarButtonStyle).apply {
                 text = activity.getString(R.string.find)
@@ -296,7 +295,7 @@ class PageAdapter(private val activity: UnicodeActivity, private val pref: Share
                     }
                     override fun onPageScrollStateChanged(state: Int) {}
                 })
-            }, LinearLayout.LayoutParams(Resources.getSystem().displayMetrics.widthPixels / 4, ViewGroup.LayoutParams.WRAP_CONTENT))
+            }, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
             addView(View(activity), LinearLayout.LayoutParams(0, 1, 1f))
             if (view != null) {
                 addView(Button(activity, null, android.R.attr.buttonBarButtonStyle).apply {
@@ -308,7 +307,7 @@ class PageAdapter(private val activity: UnicodeActivity, private val pref: Share
                             Toast.makeText(activity, R.string.copied, Toast.LENGTH_SHORT).show()
                         }
                     }
-                }, LinearLayout.LayoutParams(Resources.getSystem().displayMetrics.widthPixels / 4, ViewGroup.LayoutParams.WRAP_CONTENT))
+                }, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
                 addView(Button(activity, null, android.R.attr.buttonBarButtonStyle).apply {
                     text = activity.getString(R.string.input)
                     setOnClickListener {
@@ -320,7 +319,7 @@ class PageAdapter(private val activity: UnicodeActivity, private val pref: Share
                         if (start == -1) return@setOnClickListener
                         edit.editableText.replace(min(start, end), max(start, end), ua.getItem(adapter.index))
                     }
-                }, LinearLayout.LayoutParams(Resources.getSystem().displayMetrics.widthPixels / 4, ViewGroup.LayoutParams.WRAP_CONTENT))
+                }, LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1f))
             }
         }, LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT))
         activity.setBottomSheetContent(layout, if (parentAdapter === adapterList) null else ua)
