@@ -522,7 +522,7 @@
 	<string name="legal_uni2">本アプリケーションはUnicode Data Fileの改変された版を含んでいます。
 Copyright © 1991-2026 Unicode, Inc. All rights reserved.
 Distributed under the Terms of Use in
-http://www.unicode.org/copyright.html</string>
+https://www.unicode.org/copyright.html</string>
     <string name="locale_default">デフォルト (%s)</string>
 	<string name="locale_other">その他…</string>
 	<string name="locale_title">ロケール</string>
