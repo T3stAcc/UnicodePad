@@ -28,7 +28,6 @@ import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.Switch
 import androidx.core.view.setPadding
-import kotlin.collections.ArrayList
 import kotlin.streams.toList
 
 internal class EditAdapter(activity: Activity, pref: SharedPreferences, db: NameDatabase, single: Boolean, private val edit: EditText) : DragListUnicodeAdapter<Pair<CharSequence, Long>>(activity, db, single), TextWatcher {
